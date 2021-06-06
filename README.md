@@ -1,10 +1,14 @@
-- 👋 Hi, I’m @isa712
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+**TUTORIAL DO PASSO A PASSO PARA INSTALAÇÃO E CONFIGURAÇÃO DO DOCKERFILE PARA UTILIZAR O WIKI.JS**
 
-<!---
-isa712/isa712 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+*Primeiro passo:*
+
+Instalar o docker utilizando o comando: apt install docker
+
+*Segundo passo:*
+
+Criar dois arquivos no GitHub, um com o nome de docker-compose.yaml e outro com nome de README.md
+1. No README.md é onde está escrito todo o tutorial de como ter acesso ao wiki.js
+2. No docker-compose.yaml é onde esta todo o código de funcionamento
+
+
