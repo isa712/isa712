@@ -5,7 +5,7 @@ services:
     environnent:
       POSTGRES_DB: wikijs
       POSTGRES_PASSWORD: ifrn@2019
-      POSTGRES_USER: isabella
+      POSTGRES_USER: wikijs
     logging:
       driver: "none"
     restart: unless-stopped
@@ -22,7 +22,7 @@ services:
         DB_PORT: 5432
         DB_USER: wikijs
         DB-PASS: ifrn@2019
-        DB_NAME: isabella
+        DB_NAME: wikijs
       restart: unless-stopped
       ports:
         - "9090:3000"
