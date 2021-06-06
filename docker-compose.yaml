@@ -1,0 +1,6 @@
+#Primeiro passo: Instalação e configuração da máquina virtual.
+
+#Segundo passo: Instalação do Dockerfile pelo comando  SUDO APT INSTALL DOCKER.
+
+#Terceiro passo: Instalação do DOCKER-COMPOSE pelo comando SUDO APT INSTALL DOCKER-COMPOSE.
+
