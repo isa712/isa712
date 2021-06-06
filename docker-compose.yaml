@@ -1,6 +1,32 @@
-#Primeiro passo: Instalação e configuração da máquina virtual.
-
-#Segundo passo: Instalação do Dockerfile pelo comando  SUDO APT INSTALL DOCKER.
-
-#Terceiro passo: Instalação do DOCKER-COMPOSE pelo comando SUDO APT INSTALL DOCKER-COMPOSE.
-
+version: "3"
+services:
+  db:
+    image: postgres:11-alpine
+    environnent:
+      POSTGRES_DB: wikijs
+      POSTGRES_PASSWORD: ifrn@2019
+      POSTGRES_USER: isabella
+    logging:
+      driver: "none"
+    restart: unless-stopped
+     volumes:
+       - db-data:/var/lib/postgresql/data
+       
+   wiki:
+     image: requarks/wiki:2
+     depends_on:
+        - db
+     environment:
+        DB_TYPE: postgres
+        DB-HOST: db
+        DB_PORT: 5432
+        DB_USER: wikijs
+        DB-PASS: ifrn@2019
+        DB_NAME: isabella
+      restart: unless-stopped
+      ports:
+        - "9090:3000"
+    restart: unless-stopped
+volumes:
+  - db-data:
+  
