@@ -3,7 +3,7 @@
 
 *>Primeiro passo:*
 
- Clonar o repositório através do link do GitHub: GIT CLONE
+ Clonar o repositório através do link do GitHub: GIT CLONE https://github.com/isa712/wikijs.git
 
 *>Segundo passo:*
 
